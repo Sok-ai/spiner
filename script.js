@@ -1,89 +1,89 @@
 // надписи и цвета на секторах
 const prizes = [
   {
-    text: "1",
+    text: " 1",
     color: "hsl(197 30% 43%)",
-    question: "Вопрос1",
+    question: `Сектор 1.<br> Тип мышления, заключающийся во фрагментарном восприятии информации. Люди с таким мышлением склонны к восприятию информации отрывочно и порционно, небольшими кусками, при этом значительно страдает глубина понимания материала, а также критический подход к информации.`,
   },
   { 
-    text: "2",
+    text: " 2",
     color: "hsl(173 58% 39%)",
-    question: "Вопрос2",
+    question: `Сектор 2.<br> С его помощью мошенники и выуживают у пользователя данные и потом используют их в своих целях.`,
   },
   { 
-    text: "3",
+    text: " 3",
     color: "hsl(43 74% 66%)",
-    question: "Вопрос3",
+    question: `Сектор 3.<br> Группы, распространяющие идею и практики причинения самому себе физического или психологического вреда.`,
   },
   {
     text: "4",
     color: "hsl(197 30% 43%)",
-    question: "Вопрос4",
+    question: `Сектор 4.<br> Движение, ставшее популярным в США. Эти сообщества романтизируют и продвигают, идею массовых убийств и, в особенности, массовых убийств среди детей и подростков в школах.`,
   },
   { 
     text: "5",
     color: "hsl(173 58% 39%)",
-    question: "Вопрос5",
+    question: "Сектор 5.<br>",
   },
   { 
     text: "6",
     color: "hsl(43 74% 66%)",
-    question: "Вопрос6",
+    question: `Сектор 6.<br>`,
   },
   {
     text: "7",
     color: "hsl(197 30% 43%)",
-    question: "Вопрос7",
+    question: `Сектор 7.<br>`,
   },
   { 
     text: "8",
     color: "hsl(173 58% 39%)",
-    question: "Вопрос8",
+    question: `Сектор 8<br>`,
   },
   { 
     text: "9",
     color: "hsl(43 74% 66%)",
-    question: "Вопрос9",
+    question: `Сектор 9<br>`,
   },
   {
     text: "10",
     color: "hsl(197 30% 43%)",
-    question: "Вопрос10",
+    question: `Сектор 10<br>`,
   },
   { 
     text: "11",
     color: "hsl(173 58% 39%)",
-    question: "Вопрос11",
+    question: `Сектор 11<br>`,
   },
   { 
     text: "12",
     color: "hsl(43 74% 66%)",
-    question: "Вопрос12",
+    question: `Сектор 12<br>`,
   },
   {
     text: "13",
     color: "hsl(197 30% 43%)",
-    question: "Вопрос13",
+    question: `Сектор 13<br>`,
   },
   { 
     text: "14",
     color: "hsl(173 58% 39%)",
-    question: "Вопрос14",
+    question: `Сектор 14<br>`,
   },
   { 
     text: "15",
     color: "hsl(43 74% 66%)",
-    question: "Вопрос15",
+    question: `Сектор 15<br>`,
   },
   {
     text: "Блиц",
     color: "hsl(197 30% 43%)",
-    question: "Вопрос16",
+    question: `Блиц <br>`,
   },
   { 
     text: "Черный ящик",
     color: "hsl(173 58% 39%)",
-    question: "Вопрос17",
+    question: `Черный ящик <br>`,
   },
 ];
 
@@ -194,7 +194,7 @@ const runTickerAnimation = () => {
 const selectPrize = () => {
   const selected = Math.floor(rotation / prizeSlice);
   prizeNodes[selected].classList.add(selectedClass);
-  question.textContent = prizes[selected].question
+  question.innerHTML = prizes[selected].question
 };
 
 // отслеживаем нажатие на кнопку
